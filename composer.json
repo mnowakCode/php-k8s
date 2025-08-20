@@ -1,32 +1,26 @@
 {
-    "name": "renoki-co/php-k8s",
-    "description": "Control your Kubernetes clusters with this PHP-based Kubernetes client. It supports any form of authentication, the exec API, and it has an easy implementation for CRDs.",
-    "keywords": [
-        "laravel",
-        "php",
-        "kubernetes",
-        "k8s",
-        "k3s",
-        "k0s",
-        "cluster",
-        "api",
-        "kubeadm",
-        "kubeapi",
-        "kube"
-    ],
+    "name": "m_nowak_code/php-k8s",
+    "description": "Control your Kubernetes clusters with this PHP-based Kubernetes client.",
+    "keywords": ["laravel", "php", "kubernetes", "k8s", "k3s", "k0s", "cluster", "api", "kubeadm", "kubeapi", "kube"],
     "license": "Apache-2.0",
-    "homepage": "https://github.com/renoki-co/php-k8s",
+    "homepage": "https://github.com/my-fork/php-k8s",
     "authors": [
         {
-            "name": "Alex Renoki",
+            "name": "Forked from Alex Renoki",
             "homepage": "https://github.com/rennokki",
-            "role": "Developer"
+            "role": "Original Developer"
+        },
+        {
+            "name": "Marcin Nowak",
+            "homepage": "https://github.com/mnowakCode",
+            "role": "Maintainer"
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^6.5|^7.0",
-        "illuminate/macroable": "^9.35|^10.1|^11.0",
-        "illuminate/support": "^9.35|^10.1|^11.0",
+        "php": "^8.0|^8.1|^8.2|^8.3|^8.4",
+        "guzzlehttp/guzzle": "^6.5|^7.0|^7.9",
+        "illuminate/macroable": "^9.35|^10.1|^11.0|^12.0",
+        "illuminate/support": "^9.35|^10.1|^11.0|^12.0",
         "ratchet/pawl": "^0.4.1",
         "symfony/process": "^5.4|^6.0|^7.0",
         "vierbergenlars/php-semver": "^2.1|^3.0"
@@ -50,11 +44,12 @@
     "require-dev": {
         "mockery/mockery": "^1.5",
         "orchestra/testbench": "^7.23|^8.1|^9.0",
-        "phpunit/phpunit": "^9.5.20|^10.0",
-        "vimeo/psalm": "^4.20|^5.22"
+        "phpunit/phpunit": "^9.5.20|^10.0|^11.0",
+        "vimeo/psalm": "^4.20|^5.0"
     },
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
